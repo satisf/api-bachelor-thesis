@@ -11,6 +11,8 @@ group = "edu.satisf"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
+
+
 repositories {
     mavenCentral()
 }
@@ -18,6 +20,7 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("com.google.api.graphql:rejoiner:0.3.1")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
