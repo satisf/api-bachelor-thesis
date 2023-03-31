@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="grpc-server" target="17" />
-      <module name="grpc-server.main" target="17" />
-      <module name="grpc-server.test" target="17" />
+      <module name="grpc-server-interface" target="17" />
+      <module name="grpc-server-interface.main" target="17" />
+      <module name="grpc-server-interface.test" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

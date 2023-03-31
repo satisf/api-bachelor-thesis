@@ -1,10 +1,10 @@
-package edu.satisf.grpcserverinterface
+package edu.satisf.grpcserver
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class GrpcServerInterfaceApplicationTests {
+class GrpcServerApplicationTests {
 
 	@Test
 	fun contextLoads() {

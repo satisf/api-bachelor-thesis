@@ -13,11 +13,11 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/grpc-server-interface" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/grpc-server" />
         <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/grpc-server-interface" />
+            <option value="$PROJECT_DIR$/grpc-server" />
           </set>
         </option>
       </GradleProjectSettings>
