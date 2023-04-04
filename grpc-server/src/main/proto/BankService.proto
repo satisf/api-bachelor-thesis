@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package edu.satisf.grpcserver;
+
+option java_multiple_files = true;
+option java_package = "edu.satisf.grpcserver";
+option java_outer_classname = "BankServiceProto";
+
+// The greeting service definition.
+service BankService {
+  // Sends a greeting
+  rpc RequestTransfer (TransferRequest) returns (TransferResponse){}
+  rpc BalanceRequest (BankAccountBalanceRequest) returns (BalanceResponse){}
+}
+
+message TransferRequest {
+  string from = 1;
+  string to = 2;
+  AmmountDto amount = 3;
+}
+
+message TransferResponse {
+  bool success = 1;
+}
+
+message BankAccountBalanceRequest {
+  string account = 1;
+}
+
+message BalanceResponse {
+  double currentBalance = 1;
+}
+
+message AmmountDto {
+  float amount = 1;
+  Currency currency = 2;
+}
+
+enum Currency {
+  EURO = 0;
+  DOLLAR = 1;
+}
