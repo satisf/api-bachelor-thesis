@@ -28,12 +28,6 @@ dependencies {
 		// see: https://github.com/grpc/grpc-java/issues/3633
 		implementation("javax.annotation:javax.annotation-api:1.3.1")
 	}
-
-	// Extra proto source files besides the ones residing under
-	// "src/main".
-//	protobuf(files("lib/protos.tar.gz"))
-//	protobuf(files("ext/"))
-
 }
 
 protobuf {

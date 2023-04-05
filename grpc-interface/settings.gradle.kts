@@ -1,1 +1,1 @@
-rootProject.name = "grpc-server"
+rootProject.name = "grpc-interface"
