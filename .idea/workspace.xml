@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e03bc668-2848-4737-a68c-7d6345c04643" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+    <list default="true" id="101a22a4-76b7-408d-8bc6-b1b226172df8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/grpc-server/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grpc-server/src/main/kotlin/edu/satisf/grpcserver/BankServiceImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/api-bachelor-thesis.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/grpc-interface.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-interface/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-interface/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-interface/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-interface/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +20,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/google-rejoiner">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/grpc-interface">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/grpc-server">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/netflix-dgs">
@@ -44,10 +51,20 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2O09LTFrmRMZwTNrhQ035lmFpGF" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2O0PkYl1RL93kL8mMXDQzzlR2LJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,18 +74,65 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/philipp.moeller/src/api-bachelor-thesis/grpc-server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/grpc-server" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GrpcServerApplication">
+    <configuration name="GoogleRejoinerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-bachelor-thesis.google-rejoiner.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.satisf.googlerejoiner.GoogleRejoinerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GrpcServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-bachelor-thesis.grpc-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.satisf.grpcserver.GrpcServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NetflixDgsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="netflix-dgs.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.satisf.netflixdgs.NetflixDgsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootStarterWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-bachelor-thesis.spring-boot-starter-web.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.satisf.springbootstarterweb.SpringBootStarterWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e03bc668-2848-4737-a68c-7d6345c04643" name="Changes" comment="" />
-      <created>1680686576063</created>
+      <changelist id="101a22a4-76b7-408d-8bc6-b1b226172df8" name="Changes" comment="" />
+      <created>1680694671434</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1680686576063</updated>
-      <workItem from="1680686577626" duration="34000" />
+      <updated>1680694671434</updated>
+      <workItem from="1680694672932" duration="3712000" />
     </task>
     <servers />
   </component>

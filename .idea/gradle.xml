@@ -3,6 +3,20 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/google-rejoiner" />
+            <option value="$PROJECT_DIR$/grpc-interface" />
+            <option value="$PROJECT_DIR$/grpc-server" />
+            <option value="$PROJECT_DIR$/netflix-dgs" />
+            <option value="$PROJECT_DIR$/spring-boot-starter-web" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/google-rejoiner" />
         <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
@@ -17,6 +31,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/grpc-interface" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/grpc-server" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/grpc-server" />
           </set>
         </option>
       </GradleProjectSettings>
