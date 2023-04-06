@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c2d2fb-baa1-49e6-ae43-f9c84a9ee9e3" name="Changes" comment="include grpc server dependency">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a8c2d2fb-baa1-49e6-ae43-f9c84a9ee9e3" name="Changes" comment="implement dummy server response">
+      <change afterPath="$PROJECT_DIR$/grpc-server/src/main/kotlin/edu/satisf/grpcserver/GrpcConfig.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-server/src/main/kotlin/edu/satisf/grpcserver/BankServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-server/src/main/kotlin/edu/satisf/grpcserver/BankServiceImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-server/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-server/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-server/src/main/kotlin/edu/satisf/grpcserver/GrpcServerApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-server/src/main/kotlin/edu/satisf/grpcserver/GrpcServerApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,35 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="grpc-server" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="grpc-server" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="grpc-server" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="grpc-server" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="grpc-server" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="grpc-server" type="f1a62948:ProjectNode" />
                 <item name="grpc-interface" type="2d1252cf:ModuleNode" />
               </path>
               <path>
@@ -62,6 +93,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -75,6 +113,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -84,6 +126,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON"
+    ]
   }
 }]]></component>
   <component name="RunDashboard">
@@ -131,7 +178,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680701175945</updated>
-      <workItem from="1680701177468" duration="3989000" />
+      <workItem from="1680701177468" duration="6459000" />
     </task>
     <task id="LOCAL-00001" summary="include grpc server dependency">
       <created>1680705106247</created>
@@ -140,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680705106247</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implement dummy server response">
+      <created>1680706995995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680706995995</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +202,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="include grpc server dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="include grpc server dependency" />
+    <MESSAGE value="implement dummy server response" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement dummy server response" />
   </component>
 </project>

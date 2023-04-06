@@ -17,6 +17,8 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
+//    implementation("org.springframework.boot:spring-boot-starter-web")
+//    implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("net.devh:grpc-server-spring-boot-starter:2.14.0.RELEASE")
     implementation(project(":grpc-interface"))
