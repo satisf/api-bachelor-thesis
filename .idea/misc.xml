@@ -8,7 +8,7 @@
     <file type="web" url="file://$PROJECT_DIR$/netflix-dgs" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-starter-web" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="current" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c2d2fb-baa1-49e6-ae43-f9c84a9ee9e3" name="Changes" comment="one half of google rejoiner">
+    <list default="true" id="b87f075d-f616-4f9c-8fc0-969c465179eb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google-rejoiner/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/google-rejoiner/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/BankServiceSchemaModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/BankServiceSchemaModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/GoogleRejoinerApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/GoogleRejoinerApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-interface/src/main/proto/BankService.proto" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-interface/src/main/proto/BankService.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-server/src/main/kotlin/edu/satisf/grpcserver/BankServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-server/src/main/kotlin/edu/satisf/grpcserver/BankServiceImpl.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,69 +35,14 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$/grpc-server">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="grpc-server" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="grpc-server" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="grpc-server" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="grpc-server" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="grpc-server" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="grpc-server" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="grpc-server" type="f1a62948:ProjectNode" />
-                <item name="grpc-interface" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="grpc-server" type="f1a62948:ProjectNode" />
-                <item name="grpc-interface" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,31 +50,20 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2O0cw6pbv89T8pb0TmenqxiASaf" />
+  <component name="ProjectId" id="2O72gN6nmsUHmKi0fK6mCvXcnSb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSON"
-    ]
   }
 }]]></component>
   <component name="RunDashboard">
@@ -141,31 +73,10 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GrpcServerApplication">
-    <configuration name="GoogleRejoinerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="google-rejoiner.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.satisf.googlerejoiner.GoogleRejoinerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="GrpcServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="grpc-server.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="edu.satisf.grpcserver.GrpcServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NetflixDgsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="netflix-dgs.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.satisf.netflixdgs.NetflixDgsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringBootStarterWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="spring-boot-starter-web.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.satisf.springbootstarterweb.SpringBootStarterWebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,52 +85,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a8c2d2fb-baa1-49e6-ae43-f9c84a9ee9e3" name="Changes" comment="" />
-      <created>1680701175945</created>
+      <changelist id="b87f075d-f616-4f9c-8fc0-969c465179eb" name="Changes" comment="" />
+      <created>1680897410039</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1680701175945</updated>
-      <workItem from="1680701177468" duration="17981000" />
+      <updated>1680897410039</updated>
+      <workItem from="1680897411229" duration="1136000" />
     </task>
-    <task id="LOCAL-00001" summary="include grpc server dependency">
-      <created>1680705106247</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1680705106247</updated>
-    </task>
-    <task id="LOCAL-00002" summary="implement dummy server response">
-      <created>1680706995995</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1680706995995</updated>
-    </task>
-    <task id="LOCAL-00003" summary="get grpc server running">
-      <created>1680768416454</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1680768416454</updated>
-    </task>
-    <task id="LOCAL-00004" summary="one half of google rejoiner">
-      <created>1680890993860</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1680890993860</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="include grpc server dependency" />
-    <MESSAGE value="implement dummy server response" />
-    <MESSAGE value="get grpc server running" />
-    <MESSAGE value="one half of google rejoiner" />
-    <option name="LAST_COMMIT_MESSAGE" value="one half of google rejoiner" />
   </component>
 </project>

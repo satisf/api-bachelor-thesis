@@ -4,11 +4,8 @@ import com.google.api.graphql.rejoiner.Mutation
 import com.google.api.graphql.rejoiner.Query
 import com.google.api.graphql.rejoiner.SchemaModule
 import com.google.common.util.concurrent.ListenableFuture
-import edu.satisf.grpcserver.TransferRequest
-import edu.satisf.grpcserver.TransferResponse
-import edu.satisf.grpcserver.BankAccountBalanceRequest
-import edu.satisf.grpcserver.BalanceResponse
-import edu.satisf.grpcserver.BankServiceGrpc.BankServiceFutureStub
+import edu.satisf.grpcinterface.*
+import edu.satisf.grpcinterface.BankServiceGrpc.BankServiceFutureStub
 
 class BankServiceSchemaModule: SchemaModule() {
 
