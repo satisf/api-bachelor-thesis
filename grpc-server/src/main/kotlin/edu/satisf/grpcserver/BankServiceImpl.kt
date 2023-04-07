@@ -7,7 +7,7 @@ import net.devh.boot.grpc.server.service.GrpcService
 @GrpcService
 class BankServiceImpl: BankServiceGrpc.BankServiceImplBase() {
 
-    override fun balanceRequest(
+    override fun requestBalance(
         request: BankAccountBalanceRequest?,
         responseObserver: StreamObserver<BalanceResponse>
     ) {
@@ -16,7 +16,7 @@ class BankServiceImpl: BankServiceGrpc.BankServiceImplBase() {
         responseObserver.onCompleted()
     }
 
-    override fun requestTransfer(request: TransferRequest?, responseObserver: StreamObserver<TransferResponse>) {
+    override fun commissionTransfer(request: TransferRequest?, responseObserver: StreamObserver<TransferResponse>) {
         val response = TransferResponse.newBuilder().setSuccess(true).build()
         responseObserver.onNext(response)
         responseObserver.onCompleted()

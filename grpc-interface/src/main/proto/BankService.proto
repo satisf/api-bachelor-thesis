@@ -1,16 +1,14 @@
 syntax = "proto3";
 
-package edu.satisf.grpcserver;
+package edu.satisf.grpcinterface;
 
 option java_multiple_files = true;
 option java_package = "edu.satisf.grpcserver";
 option java_outer_classname = "BankServiceProto";
 
-// The greeting service definition.
 service BankService {
-  // Sends a greeting
-  rpc RequestTransfer (TransferRequest) returns (TransferResponse){}
-  rpc BalanceRequest (BankAccountBalanceRequest) returns (BalanceResponse){}
+  rpc commissionTransfer (TransferRequest) returns (TransferResponse){}
+  rpc requestBalance (BankAccountBalanceRequest) returns (BalanceResponse){}
 }
 
 message TransferRequest {

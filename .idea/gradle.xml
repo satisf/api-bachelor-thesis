@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/google-rejoiner" />
+            <option value="$PROJECT_DIR$/grpc-interface" />
           </set>
         </option>
       </GradleProjectSettings>
