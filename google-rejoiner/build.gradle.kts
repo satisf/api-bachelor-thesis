@@ -19,6 +19,8 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("graphql-spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("com.google.api.graphql:rejoiner:0.3.1")
     implementation("io.grpc:grpc-stub:1.40.1")

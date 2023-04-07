@@ -10,7 +10,7 @@ import edu.satisf.grpcserver.BankAccountBalanceRequest
 import edu.satisf.grpcserver.BalanceResponse
 import edu.satisf.grpcserver.BankServiceGrpc.BankServiceFutureStub
 
-class BankServiceSchemaModule(): SchemaModule() {
+class BankServiceSchemaModule: SchemaModule() {
 
     @Mutation("commissionTransfer")
     fun commissionTransfer(transferRequest: TransferRequest, bankServiceStub: BankServiceFutureStub): ListenableFuture<TransferResponse> {
