@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b87f075d-f616-4f9c-8fc0-969c465179eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b87f075d-f616-4f9c-8fc0-969c465179eb" name="Changes" comment="more cleanup">
+      <change afterPath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/BankServiceGrpcClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/GrpcClientModule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google-rejoiner/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/google-rejoiner/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/BankServiceSchemaModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/BankServiceSchemaModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/GoogleRejoinerApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/GoogleRejoinerApplication.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,11 +98,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680897410039</updated>
-      <workItem from="1680897411229" duration="1136000" />
+      <workItem from="1680897411229" duration="3485000" />
     </task>
+    <task id="LOCAL-00001" summary="more cleanup">
+      <created>1680898753483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680898753483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="more cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="more cleanup" />
   </component>
 </project>
