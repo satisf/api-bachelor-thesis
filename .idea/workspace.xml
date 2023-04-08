@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b87f075d-f616-4f9c-8fc0-969c465179eb" name="Changes" comment="more cleanup">
-      <change afterPath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/BankServiceGrpcClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/GrpcClientModule.kt" afterDir="false" />
+    <list default="true" id="b87f075d-f616-4f9c-8fc0-969c465179eb" name="Changes" comment=":pray">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google-rejoiner/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/google-rejoiner/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/GoogleRejoinerApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/GoogleRejoinerApplication.kt" afterDir="false" />
@@ -36,9 +34,28 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/google-rejoiner">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="google-rejoiner" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="google-rejoiner" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="google-rejoiner" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -65,23 +82,45 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
         <option value="GradleRunConfiguration" />
+        <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.GoogleRejoinerApplication">
+    <configuration name="GoogleRejoinerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="google-rejoiner.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.satisf.googlerejoiner.GoogleRejoinerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.satisf.googlerejoiner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GrpcServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="grpc-server.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="edu.satisf.grpcserver.GrpcServerApplication" />
@@ -89,6 +128,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GoogleRejoinerApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -98,7 +142,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680897410039</updated>
-      <workItem from="1680897411229" duration="3485000" />
+      <workItem from="1680897411229" duration="8036000" />
     </task>
     <task id="LOCAL-00001" summary="more cleanup">
       <created>1680898753483</created>
@@ -107,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680898753483</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=":pray">
+      <created>1680903610214</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680903610214</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +166,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="more cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="more cleanup" />
+    <MESSAGE value=":pray" />
+    <option name="LAST_COMMIT_MESSAGE" value=":pray" />
   </component>
 </project>
