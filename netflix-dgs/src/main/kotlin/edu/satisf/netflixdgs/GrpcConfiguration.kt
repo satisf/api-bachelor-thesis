@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration
 @GrpcClientBean(
     beanName = "bankServiceStub",
     clazz = BankServiceGrpc.BankServiceBlockingStub::class,
-    client = GrpcClient(value = "BankServiceGrpcService"),
+    client = GrpcClient(value = "BankService"),
 )
 @Configuration
 class GrpcConfiguration
