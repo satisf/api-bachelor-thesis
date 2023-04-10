@@ -14,7 +14,7 @@ service BankService {
 message TransferRequest {
   string from = 1;
   string to = 2;
-  AmmountDto amount = 3;
+  AmountDto amount = 3;
 }
 
 message TransferResponse {
@@ -26,10 +26,10 @@ message BankAccountBalanceRequest {
 }
 
 message BalanceResponse {
-  double currentBalance = 1;
+  float currentBalance = 1;
 }
 
-message AmmountDto {
+message AmountDto {
   float amount = 1;
   Currency currency = 2;
 }

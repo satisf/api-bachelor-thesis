@@ -12,7 +12,7 @@ class BankServiceImpl: BankServiceGrpc.BankServiceImplBase() {
         request: BankAccountBalanceRequest?,
         responseObserver: StreamObserver<BalanceResponse>
     ) {
-        val response = BalanceResponse.newBuilder().setCurrentBalance(10.0).build()
+        val response = BalanceResponse.newBuilder().setCurrentBalance(10.0f).build()
         responseObserver.onNext(response)
         responseObserver.onCompleted()
     }

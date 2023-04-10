@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b87f075d-f616-4f9c-8fc0-969c465179eb" name="Changes" comment="wip rejoiner">
-      <change afterPath="$PROJECT_DIR$/netflix-dgs/src/main/kotlin/grpc/BankServiceGrpcService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/RejoinerConfiguration.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-dgs/src/main/kotlin/edu/satisf/netflixdgs/GrpcConfiguration.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-dgs/src/main/kotlin/edu/satisf/netflixdgs/graphql/BankServiceDataFetcher.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-dgs/src/main/resources/schema/schema.graphqls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/GoogleRejoinerApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/google-rejoiner/src/main/kotlin/edu/satisf/googlerejoiner/GoogleRejoinerApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-interface/src/main/proto/BankService.proto" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-interface/src/main/proto/BankService.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc-server/src/main/kotlin/edu/satisf/grpcserver/BankServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/grpc-server/src/main/kotlin/edu/satisf/grpcserver/BankServiceImpl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netflix-dgs/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-dgs/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netflix-dgs/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-dgs/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netflix-dgs/src/main/kotlin/grpc/BankServiceGrpcService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-dgs/src/main/kotlin/edu/satisf/netflixdgs/grpc/BankServiceGrpcService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netflix-dgs/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-dgs/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,22 +89,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6b2d3acbc1f596f73836f79b3729914e&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -152,7 +165,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680897410039</updated>
-      <workItem from="1680897411229" duration="11161000" />
+      <workItem from="1680897411229" duration="11854000" />
+      <workItem from="1680979835639" duration="43000" />
+      <workItem from="1680979887461" duration="1831000" />
+      <workItem from="1680985896003" duration="231000" />
+      <workItem from="1680986142241" duration="258000" />
+      <workItem from="1680986412912" duration="193000" />
+      <workItem from="1680986617615" duration="17000" />
+      <workItem from="1680986640185" duration="18094000" />
+      <workItem from="1681111338643" duration="215000" />
     </task>
     <task id="LOCAL-00001" summary="more cleanup">
       <created>1680898753483</created>
@@ -175,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680962830688</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="wip rejoiner">
+      <created>1680979735031</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680979735031</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

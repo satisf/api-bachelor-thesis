@@ -1,0 +1,35 @@
+type Query {
+  currentBalance(bankAccountBalanceRequest: BankAccountBalanceGqlRequest): BalanceGqlResponse
+}
+
+type Mutation {
+  commissionTransfer(transferRequest: TransferGqlRequest): TransferGqlResponse
+}
+
+input TransferGqlRequest {
+  from: String
+  to: String
+  amount: AmountGqlDto
+}
+
+type TransferGqlResponse {
+  success: Boolean
+}
+
+input BankAccountBalanceGqlRequest {
+  account: String
+}
+
+type BalanceGqlResponse {
+  currentBalance: Float
+}
+
+input AmountGqlDto {
+  amount: Float
+  currency: Currency
+}
+
+enum Currency {
+  EURO
+  DOLLAR
+}

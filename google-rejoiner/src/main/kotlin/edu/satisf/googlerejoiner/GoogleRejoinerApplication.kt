@@ -18,29 +18,6 @@ import graphql.kickstart.execution.config.GraphQLSchemaProvider
 
 @SpringBootApplication
 class GoogleRejoinerApplication {
-
-    private final var injector: Injector = Guice.createInjector(
-        SchemaProviderModule(),
-        GrpcClientModule(),
-        GraphQlSchemaModule()
-    )
-
-
-    @Bean
-    fun schemaProvider(): GraphQLSchemaProvider? {
-        val schema: GraphQLSchema = injector.getInstance(Key.get(GraphQLSchema::class.java, Schema::class.java))
-        return DefaultGraphQLSchemaProvider(schema)
-    }
-
-    @Bean
-    fun instrumentation(): Instrumentation? {
-        return GuavaListenableFutureSupport.listenableFutureInstrumentation()
-    }
-
-    @Bean
-    fun bankServiceFutureStub(): BankServiceFutureStub? {
-        return injector.getInstance(BankServiceFutureStub::class.java)
-    }
 }
 fun main(args: Array<String>) {
     runApplication<GoogleRejoinerApplication>(*args)
