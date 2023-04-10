@@ -18,9 +18,14 @@ class BankServiceGrpcService(
         return bankServiceStub.commissionTransfer(transferRequest)
     }
 
+    fun commissionTransfer(from: String, to: String, amount: Float, currency: Currency): Boolean =
+        commissionTransfer(buildTransferRequest(from, to, amount, currency)).success
+
     fun requestBalance(bankAccountBalanceRequest: BankAccountBalanceRequest): BalanceResponse {
         return bankServiceStub.requestBalance(bankAccountBalanceRequest)
     }
+
+    fun requestBalance(accountName: String): Float = requestBalance(buildBalanceRequest(accountName)).currentBalance
 
     fun buildBalanceRequest(accountName: String) =
         BankAccountBalanceRequest
