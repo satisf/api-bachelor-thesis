@@ -1,11 +1,13 @@
 package edu.satisf.springbootstarterweb.grpc
 
 import edu.satisf.grpcinterface.*
+import net.devh.boot.grpc.client.inject.GrpcClient
 import org.springframework.stereotype.Service
 
 
 @Service
 class BankServiceGrpcService(
+    @GrpcClient("BankService")
     private val bankServiceStub: BankServiceGrpc.BankServiceBlockingStub
 ) {
 
