@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package edu.satisf.grpcinterfacejava11;
+
+option java_multiple_files = true;
+option java_package = "edu.satisf.grpcinterfacejava11";
+option java_outer_classname = "BankServiceProto";
+
+service BankService {
+  rpc commissionTransfer (TransferRequest) returns (TransferResponse){}
+  rpc requestBalance (BankAccountBalanceRequest) returns (BalanceResponse){}
+}
+
+message TransferRequest {
+  string from = 1;
+  string to = 2;
+  AmountDto amount = 3;
+}
+
+message TransferResponse {
+  bool success = 1;
+}
+
+message BankAccountBalanceRequest {
+  string account = 1;
+}
+
+message BalanceResponse {
+  float currentBalance = 1;
+}
+
+message AmountDto {
+  float amount = 1;
+  Currency currency = 2;
+}
+
+enum Currency {
+  EURO = 0;
+  DOLLAR = 1;
+}

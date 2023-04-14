@@ -6,7 +6,7 @@ import com.google.api.graphql.rejoiner.SchemaProviderModule
 import com.google.inject.Guice
 import com.google.inject.Injector
 import com.google.inject.Key
-import edu.satisf.grpcinterface.BankServiceGrpc
+import edu.satisf.grpcinterfacejava11.BankServiceGrpc
 import graphql.execution.instrumentation.Instrumentation
 import graphql.kickstart.execution.config.DefaultGraphQLSchemaProvider
 import graphql.kickstart.execution.config.GraphQLSchemaProvider
@@ -26,18 +26,23 @@ class RejoinerConfiguration {
 
 
     @Bean
-    fun schemaProvider(): GraphQLSchemaProvider? {
+    fun schemaProvider(): GraphQLSchemaProvider {
         val schema: GraphQLSchema = injector.getInstance(Key.get(GraphQLSchema::class.java, Schema::class.java))
         return DefaultGraphQLSchemaProvider(schema)
     }
 
     @Bean
-    fun instrumentation(): Instrumentation? {
+    fun instrumentation(): Instrumentation {
         return GuavaListenableFutureSupport.listenableFutureInstrumentation()
     }
 
     @Bean
-    fun bankServiceFutureStub(): BankServiceGrpc.BankServiceFutureStub? {
+    fun bankServiceFutureStub(): BankServiceGrpc.BankServiceFutureStub {
         return injector.getInstance(BankServiceGrpc.BankServiceFutureStub::class.java)
+    }
+
+    @Bean
+    fun bankServiceBlockingStub(): BankServiceGrpc.BankServiceBlockingStub {
+        return injector.getInstance(BankServiceGrpc.BankServiceBlockingStub::class.java)
     }
 }

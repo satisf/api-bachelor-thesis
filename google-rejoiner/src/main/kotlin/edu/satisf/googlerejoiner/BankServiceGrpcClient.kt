@@ -2,7 +2,7 @@ package edu.satisf.googlerejoiner
 
 import com.google.inject.AbstractModule
 import io.grpc.ManagedChannelBuilder
-import edu.satisf.grpcinterface.BankServiceGrpc
+import edu.satisf.grpcinterfacejava11.BankServiceGrpc
 
 
 class BankServiceGrpcClient: AbstractModule() {

@@ -1,3 +1,3 @@
 rootProject.name = "google-rejoiner"
-include(":grpc-interface")
-project(":grpc-interface").projectDir = File("../grpc-interface")
+include(":grpc-interface-java-11")
+project(":grpc-interface-java-11").projectDir = File("../grpc-interface-java-11")
