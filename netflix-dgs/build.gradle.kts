@@ -18,7 +18,6 @@ repositories {
 dependencies {
     implementation("net.devh:grpc-client-spring-boot-starter:2.14.0.RELEASE")
     implementation("org.springframework.boot:spring-boot-starter")
-    implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:5.4.5"))
     implementation("com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
