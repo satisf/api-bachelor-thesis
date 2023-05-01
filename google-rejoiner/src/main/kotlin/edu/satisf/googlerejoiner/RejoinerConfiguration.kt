@@ -17,7 +17,6 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 class RejoinerConfiguration {
 
-
     private final var injector: Injector = Guice.createInjector(
         SchemaProviderModule(),
         GrpcClientModule(),
