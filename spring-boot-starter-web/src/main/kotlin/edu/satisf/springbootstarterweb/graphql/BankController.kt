@@ -1,24 +1,24 @@
-package edu.satisf.netflixdgs.graphql
+package edu.satisf.springbootstarterweb.graphql
 
-import com.netflix.graphql.dgs.DgsComponent
-import com.netflix.graphql.dgs.DgsMutation
-import com.netflix.graphql.dgs.DgsQuery
-import com.netflix.graphql.dgs.InputArgument
-import edu.satisf.netflixdgs.grpc.BankServiceGrpcService
 import edu.satisf.grpcinterface.*
+import edu.satisf.springbootstarterweb.grpc.BankServiceGrpcService
+import org.springframework.graphql.data.method.annotation.Argument
+import org.springframework.graphql.data.method.annotation.MutationMapping
+import org.springframework.stereotype.Controller
+import org.springframework.graphql.data.method.annotation.QueryMapping;
 
-@DgsComponent
-class BankServiceDataFetcher(
-    val bankServiceGrpcService: BankServiceGrpcService
+@Controller
+class BankController(
+    private val bankServiceGrpcService: BankServiceGrpcService
 ) {
 
-    @DgsQuery
-    fun currentBalance(@InputArgument bankAccountBalanceRequest: BankAccountBalanceGqlRequest): BalanceGqlResponse =
+    @QueryMapping
+    fun currentBalance(@Argument bankAccountBalanceRequest: BankAccountBalanceGqlRequest): BalanceGqlResponse =
         bankServiceGrpcService.requestBalance(bankAccountBalanceRequest.toGrpc())
             .toGql()
 
-    @DgsMutation
-    fun commissionTransfer(@InputArgument transferRequest: TransferGqlRequest): TransferGqlResponse =
+    @MutationMapping
+    fun commissionTransfer(@Argument transferRequest: TransferGqlRequest): TransferGqlResponse =
         bankServiceGrpcService.commissionTransfer(transferRequest.toGrpc())
             .toGql()
 }
