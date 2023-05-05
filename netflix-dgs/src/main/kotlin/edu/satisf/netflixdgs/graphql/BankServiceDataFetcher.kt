@@ -1,11 +1,9 @@
 package edu.satisf.netflixdgs.graphql
 
-import com.netflix.graphql.dgs.DgsComponent
-import com.netflix.graphql.dgs.DgsMutation
-import com.netflix.graphql.dgs.DgsQuery
-import com.netflix.graphql.dgs.InputArgument
+import com.netflix.graphql.dgs.*
 import edu.satisf.netflixdgs.grpc.BankServiceGrpcService
 import edu.satisf.grpcinterface.*
+import edu.satisf.netflixdgs.generated.types.*
 
 @DgsComponent
 class BankServiceDataFetcher(
@@ -23,53 +21,30 @@ class BankServiceDataFetcher(
             .toGql()
 }
 
-
-data class TransferGqlRequest (
-    val from: String,
-    val to: String,
-    val amount: AmountGqlDto
-)
 fun TransferGqlRequest.toGrpc() = TransferRequest
     .newBuilder()
     .setTo(this.to)
     .setFrom(this.from)
-    .setAmount(this.amount.toGrpc())
+    .setAmount(this.amount?.toGrpc())
     .build()
 
-data class TransferGqlResponse(
-    val success: Boolean
-)
 fun TransferResponse.toGql(): TransferGqlResponse = TransferGqlResponse(this.success)
 
-data class BankAccountBalanceGqlRequest(
-    val account: String
-)
 fun BankAccountBalanceGqlRequest.toGrpc(): BankAccountBalanceRequest = BankAccountBalanceRequest
     .newBuilder()
     .setAccount(this.account)
     .build()
 
-data class BalanceGqlResponse(
-    val currentBalance: Float
-)
-fun BalanceResponse.toGql() = BalanceGqlResponse(this.currentBalance)
+fun BalanceResponse.toGql() = BalanceGqlResponse(this.currentBalance.toDouble())
 
-data class AmountGqlDto (
-    val amount: Float,
-    val currency: Currency
-)
 fun AmountGqlDto.toGrpc(): AmountDto = AmountDto
     .newBuilder()
-    .setAmount(this.amount)
-    .setCurrency(this.currency.toGrpc())
+    .setAmount(this.amount!!.toFloat())
+    .setCurrency(this.currency?.toGrpc())
     .build()
 
-enum class Currency {
-    EURO,
-    DOLLAR
-}
-fun Currency.toGrpc(): edu.satisf.grpcinterface.Currency = when(this) {
-    Currency.EURO -> edu.satisf.grpcinterface.Currency.EURO
-    Currency.DOLLAR -> edu.satisf.grpcinterface.Currency.DOLLAR
+fun edu.satisf.netflixdgs.generated.types.Currency.toGrpc(): edu.satisf.grpcinterface.Currency = when(this) {
+    edu.satisf.netflixdgs.generated.types.Currency.EURO -> edu.satisf.grpcinterface.Currency.EURO
+    edu.satisf.netflixdgs.generated.types.Currency.DOLLAR -> edu.satisf.grpcinterface.Currency.DOLLAR
 }
 
