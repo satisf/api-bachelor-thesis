@@ -21,7 +21,7 @@ class BankServiceDataFetcher(
             .toGql()
 }
 
-fun TransferGqlRequest.toGrpc() = TransferRequest
+fun TransferGqlRequest.toGrpc(): TransferRequest = TransferRequest
     .newBuilder()
     .setTo(this.to)
     .setFrom(this.from)
@@ -35,7 +35,7 @@ fun BankAccountBalanceGqlRequest.toGrpc(): BankAccountBalanceRequest = BankAccou
     .setAccount(this.account)
     .build()
 
-fun BalanceResponse.toGql() = BalanceGqlResponse(this.currentBalance.toDouble())
+fun BalanceResponse.toGql(): BalanceGqlResponse = BalanceGqlResponse(this.currentBalance.toDouble())
 
 fun AmountGqlDto.toGrpc(): AmountDto = AmountDto
     .newBuilder()
