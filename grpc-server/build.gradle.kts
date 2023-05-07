@@ -19,6 +19,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("net.devh:grpc-server-spring-boot-starter:2.14.0.RELEASE")
+    implementation("io.github.microutils:kotlin-logging-jvm:2.0.11")
     implementation(project(":grpc-interface"))
 }
 

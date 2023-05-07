@@ -8,20 +8,19 @@ option java_outer_classname = "BankServiceProto";
 
 service BankService {
   rpc commissionTransfer (TransferRequest) returns (TransferResponse){}
-  rpc requestBalance (BankAccountBalanceRequest) returns (BalanceResponse){}
+  rpc requestBalance (BalanceRequest) returns (BalanceResponse){}
+  rpc listPastTransfers (PastTransfersRequest) returns (PastTransfersResponse){}
 }
 
 message TransferRequest {
-  string from = 1;
-  string to = 2;
-  AmountDto amount = 3;
+  Transfer requestedTransfer = 1;
 }
 
 message TransferResponse {
   bool success = 1;
 }
 
-message BankAccountBalanceRequest {
+message BalanceRequest {
   string account = 1;
 }
 
@@ -29,9 +28,20 @@ message BalanceResponse {
   float currentBalance = 1;
 }
 
-message AmountDto {
-  float amount = 1;
-  Currency currency = 2;
+message PastTransfersRequest {
+  string account = 1;
+}
+
+message PastTransfersResponse {
+  repeated Transfer transfers = 1;
+}
+
+message Transfer {
+  string from = 1;
+  string to = 2;
+  string reference = 3;
+  float  amount = 4;
+  Currency currency = 5;
 }
 
 enum Currency {
