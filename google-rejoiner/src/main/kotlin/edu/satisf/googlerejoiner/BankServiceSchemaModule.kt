@@ -13,7 +13,12 @@ class BankServiceSchemaModule: SchemaModule() {
     }
 
     @Query("getBalance")
-    fun getBalance(bankAccountBalanceRequest: BankAccountBalanceRequest, bankServiceStub: BankServiceFutureStub): ListenableFuture<BalanceResponse> {
-        return bankServiceStub.requestBalance(bankAccountBalanceRequest)
+    fun getBalance(balanceRequest: BalanceRequest, bankServiceStub: BankServiceFutureStub): ListenableFuture<BalanceResponse> {
+        return bankServiceStub.requestBalance(balanceRequest)
+    }
+
+    @Query("listPastTransfers")
+    fun listPastTransfers(pastTransfersRequest: PastTransfersRequest, bankServiceStub: BankServiceFutureStub): ListenableFuture<PastTransfersResponse> {
+        return bankServiceStub.listPastTransfers(pastTransfersRequest)
     }
 }
