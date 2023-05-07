@@ -6,6 +6,7 @@ import org.springframework.graphql.data.method.annotation.Argument
 import org.springframework.graphql.data.method.annotation.MutationMapping
 import org.springframework.stereotype.Controller
 import org.springframework.graphql.data.method.annotation.QueryMapping;
+import java.lang.Exception
 
 @Controller
 class BankController(
@@ -13,8 +14,13 @@ class BankController(
 ) {
 
     @QueryMapping
-    fun currentBalance(@Argument bankAccountBalanceRequest: BankAccountBalanceGqlRequest): BalanceGqlResponse =
-        bankServiceGrpcService.requestBalance(bankAccountBalanceRequest.toGrpc())
+    fun currentBalance(@Argument balanceRequest: BalanceGqlRequest): BalanceGqlResponse =
+        bankServiceGrpcService.requestBalance(balanceRequest.toGrpc())
+            .toGql()
+
+    @QueryMapping
+    fun listPastTransfers(@Argument pastTransfersRequest: PastTransfersGqlRequest): PastTransfersGqlResponse =
+        bankServiceGrpcService.listPastTransfers(pastTransfersRequest.toGrpc())
             .toGql()
 
     @MutationMapping
@@ -23,28 +29,53 @@ class BankController(
             .toGql()
 }
 
-
-data class TransferGqlRequest (
+data class Transfer (
     val from: String,
     val to: String,
-    val amount: AmountGqlDto
+    val reference: String,
+    val amount: Float,
+    val currency: Currency
 )
-fun TransferGqlRequest.toGrpc() = TransferRequest
+data class TransferGqlRequest(
+    val requestedTransfer: Transfer
+)
+fun TransferGqlRequest.toGrpc(): TransferRequest = TransferRequest
     .newBuilder()
-    .setTo(this.to)
-    .setFrom(this.from)
-    .setAmount(this.amount.toGrpc())
-    .build()
+    .setRequestedTransfer(
+        edu.satisf.grpcinterface.Transfer
+            .newBuilder()
+            .setFrom(this.requestedTransfer.from)
+            .setTo(this.requestedTransfer.to)
+            .setReference(this.requestedTransfer.reference)
+            .setAmount(this.requestedTransfer.amount)
+            .setCurrency(this.requestedTransfer.currency.toGrpc())
+    ).build()
 
 data class TransferGqlResponse(
     val success: Boolean
 )
+
 fun TransferResponse.toGql(): TransferGqlResponse = TransferGqlResponse(this.success)
 
-data class BankAccountBalanceGqlRequest(
+data class PastTransfersGqlRequest(
     val account: String
 )
-fun BankAccountBalanceGqlRequest.toGrpc(): BankAccountBalanceRequest = BankAccountBalanceRequest
+
+fun PastTransfersGqlRequest.toGrpc(): PastTransfersRequest = PastTransfersRequest
+    .newBuilder()
+    .setAccount(this.account)
+    .build()
+
+data class PastTransfersGqlResponse(
+    val transfers: List<Transfer>
+)
+
+fun PastTransfersResponse.toGql(): PastTransfersGqlResponse = PastTransfersGqlResponse(this.transfersList.map { Transfer(it.from, it.to, it.reference, it.amount, it.currency.toGql()) })
+
+data class BalanceGqlRequest(
+    val account: String
+)
+fun BalanceGqlRequest.toGrpc(): BalanceRequest = BalanceRequest
     .newBuilder()
     .setAccount(this.account)
     .build()
@@ -52,17 +83,9 @@ fun BankAccountBalanceGqlRequest.toGrpc(): BankAccountBalanceRequest = BankAccou
 data class BalanceGqlResponse(
     val currentBalance: Float
 )
+
 fun BalanceResponse.toGql() = BalanceGqlResponse(this.currentBalance)
 
-data class AmountGqlDto (
-    val amount: Float,
-    val currency: Currency
-)
-fun AmountGqlDto.toGrpc(): AmountDto = AmountDto
-    .newBuilder()
-    .setAmount(this.amount)
-    .setCurrency(this.currency.toGrpc())
-    .build()
 
 enum class Currency {
     EURO,
@@ -73,3 +96,8 @@ fun Currency.toGrpc(): edu.satisf.grpcinterface.Currency = when(this) {
     Currency.DOLLAR -> edu.satisf.grpcinterface.Currency.DOLLAR
 }
 
+fun edu.satisf.grpcinterface.Currency.toGql(): Currency = when(this) {
+    edu.satisf.grpcinterface.Currency.EURO -> Currency.EURO
+    edu.satisf.grpcinterface.Currency.DOLLAR -> Currency.DOLLAR
+    else -> throw Exception("unknown currency $this")
+}
