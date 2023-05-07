@@ -1,22 +1,13 @@
 type Query {
-  currentBalance(bankAccountBalanceRequest: BankAccountBalanceGqlRequest): BalanceGqlResponse
+  currentBalance(balanceRequest: BalanceGqlRequest): BalanceGqlResponse
+  listPastTransfers(pastTransfersRequest: PastTransfersGqlRequest): PastTransfersGqlResponse
 }
 
 type Mutation {
   commissionTransfer(transferRequest: TransferGqlRequest): TransferGqlResponse
 }
 
-input TransferGqlRequest {
-  from: String
-  to: String
-  amount: AmountGqlDto
-}
-
-type TransferGqlResponse {
-  success: Boolean
-}
-
-input BankAccountBalanceGqlRequest {
+input BalanceGqlRequest {
   account: String
 }
 
@@ -24,7 +15,34 @@ type BalanceGqlResponse {
   currentBalance: Float
 }
 
-input AmountGqlDto {
+input PastTransfersGqlRequest {
+  account: String
+}
+
+type PastTransfersGqlResponse {
+  transfers: [Transfer]
+}
+
+input TransferGqlRequest {
+  requestedTransfer: TransferInput
+}
+
+type TransferGqlResponse {
+  success: Boolean
+}
+
+input TransferInput {
+  from: String
+  to: String
+  reference: String
+  amount: Float
+  currency: Currency
+}
+
+type Transfer {
+  from: String
+  to: String
+  reference: String
   amount: Float
   currency: Currency
 }

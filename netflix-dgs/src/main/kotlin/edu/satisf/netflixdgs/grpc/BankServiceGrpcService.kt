@@ -2,6 +2,7 @@ package edu.satisf.netflixdgs.grpc
 
 import org.springframework.stereotype.Service
 import edu.satisf.grpcinterface.*
+import edu.satisf.netflixdgs.generated.types.ListPastTransfersGqlRequest
 
 @Service
 class BankServiceGrpcService(
@@ -10,7 +11,11 @@ class BankServiceGrpcService(
     fun commissionTransfer(transferRequest: TransferRequest): TransferResponse {
         return bankServiceStub.commissionTransfer(transferRequest)
     }
-    fun requestBalance(bankAccountBalanceRequest: BankAccountBalanceRequest): BalanceResponse {
-        return bankServiceStub.requestBalance(bankAccountBalanceRequest)
+
+    fun listPastTransfers(pastTransfersRequest: PastTransfersRequest): PastTransfersResponse {
+        return bankServiceStub.listPastTransfers(pastTransfersRequest)
+    }
+    fun requestBalance(balanceRequest: BalanceRequest): BalanceResponse {
+        return bankServiceStub.requestBalance(balanceRequest)
     }
 }
